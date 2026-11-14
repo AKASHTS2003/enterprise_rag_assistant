@@ -1,5 +1,13 @@
+import sys
 import streamlit as st
 from pathlib import Path
+
+# Get the project root directory
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+# Add the project root to Python's module search path
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 
 from app.rag_chain import answer_question
 
