@@ -10,6 +10,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from app.rag_chain import answer_question
+from app.initialize_db import initialize_knowledge_base
 
 
 # ==========================================
@@ -23,6 +24,12 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+# ==========================================
+# INITIALIZE KNOWLEDGE BASE
+# ==========================================
+
+with st.spinner("Initializing enterprise knowledge base..."):
+    collection = initialize_knowledge_base()
 
 # ==========================================
 # DARK ENTERPRISE THEME
