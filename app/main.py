@@ -562,8 +562,7 @@ if question:
             except Exception as error:
 
                 error_message = (
-                    "Unable to process your question. "
-                    "Please try again."
+                    f"Unable to process your question. Please try again. Error:{error}"
                 )
 
                 st.error(error_message)
