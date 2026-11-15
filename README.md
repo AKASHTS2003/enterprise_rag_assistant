@@ -30,9 +30,6 @@ The application allows users to interact with enterprise documents through a sim
 | Gemini Embedding Model | Text embedding generation |
 | ChromaDB | Vector database |
 | PyPDF | PDF text extraction |
-| NumPy | Numerical operations |
-| Pandas | Data handling |
-| Scikit-learn | Machine learning utilities |
 
 ## 🧠 RAG Architecture
 
